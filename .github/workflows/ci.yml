@@ -1,0 +1,33 @@
+name: ☁️ IPFS CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  ipfs-validate:
+    name: 📊 Validate IPFS Requirements
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+      
+      - name: 🔍 Validate JSON-LD Requirements
+        run: |
+          if [ -f "requirements/requirements.jsonld" ]; then
+            # Validate JSON-LD format
+            jq empty requirements/requirements.jsonld
+            echo "Requirements validation successful"
+          else
+            echo "Error: requirements.jsonld not found"
+            exit 1
+          fi
+
+      # Note: This workflow will be enhanced incrementally:
+      # 1. Go code compilation will be added once we have initial Go implementation
+      # 2. Unit tests will be added when we have testable components
+      # 3. Integration tests will be added when we have a functional IPFS node 
