@@ -61,7 +61,7 @@ jobs:
         # Add actual test results to the file
         cat > tests/results/test-results.jsonld << EOF
         {
-          "@context": "https://raw.githubusercontent.com/journalbrand/todo-system/main/requirements/context/requirements-context.jsonld",
+          "@context": "https://raw.githubusercontent.com/journalbrand/journaltrove-system/main/requirements/context/requirements-context.jsonld",
           "@graph": [
             {
               "@id": "ipfs-test-results",

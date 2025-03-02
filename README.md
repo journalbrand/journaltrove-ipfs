@@ -1,16 +1,16 @@
 <!-- === WATCHER HEADER START === -->
-<!-- File: todo-ipfs/README.md -->
+<!-- File: journaltrove-ipfs/README.md -->
 <!-- Managed by file watcher -->
 <!-- === WATCHER HEADER END === -->
-# 🌐 Todo App IPFS Node
+# 🌐 journaltrove App IPFS Node
 
-This repository contains the IPFS node implementation for the Todo App ecosystem, providing decentralized storage capabilities for todo lists.
+This repository contains the IPFS node implementation for the journaltrove App ecosystem, providing decentralized storage capabilities for journaltrove lists.
 
 ## 📚 Overview
 
-The IPFS node serves as the backbone for secure, distributed storage in the Todo App ecosystem. It enables:
+The IPFS node serves as the backbone for secure, distributed storage in the journaltrove App ecosystem. It enables:
 
-- Decentralized storage of todo lists
+- Decentralized storage of journaltrove lists
 - Cross-device synchronization
 - Cryptographic verification of content
 - Peer-to-peer distribution of data
@@ -25,7 +25,7 @@ The IPFS node currently implements:
 - ✅ Unit tests with requirement mappings
 - ✅ CI integration with the system repository
 - 🚧 IPFS core functionality integration (in progress)
-- 🚧 Todo data schema and validation (planned)
+- 🚧 journaltrove data schema and validation (planned)
 - 🚧 Identity management (planned)
 
 ## 🔧 Technology Stack
@@ -49,12 +49,12 @@ The IPFS node currently implements:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/journalbrand/todo-ipfs.git
+git clone https://github.com/journalbrand/journaltrove-ipfs.git
 ```
 
 2. Install dependencies:
 ```bash
-cd todo-ipfs
+cd journaltrove-ipfs
 go mod download
 ```
 
@@ -71,9 +71,9 @@ make test
 ### Project Structure
 
 ```
-todo-ipfs/
+journaltrove-ipfs/
 ├── cmd/                  # Command-line applications
-│   └── todo-ipfs/        # Main IPFS node application
+│   └── journaltrove-ipfs/        # Main IPFS node application
 │       └── main.go       # Application entry point
 ├── pkg/                  # Reusable packages
 │   └── echo/             # Echo service implementation
@@ -117,7 +117,7 @@ make test
 
 ## 🔄 CI/CD Integration
 
-This repository integrates with the Todo App CI/CD pipeline:
+This repository integrates with the journaltrove App CI/CD pipeline:
 
 - **CI Workflow**: `.github/workflows/ci.yml`
 - **Artifacts**: Test results in JSON-LD format
@@ -125,21 +125,21 @@ This repository integrates with the Todo App CI/CD pipeline:
 
 ## 🔌 IPFS Integration
 
-The Todo App IPFS node will utilize several IPFS capabilities:
+The journaltrove App IPFS node will utilize several IPFS capabilities:
 
 - **Content Addressing**: Data is referenced by its content hash, ensuring integrity
 - **Distributed Hash Table (DHT)**: For peer and content discovery
 - **Merkle DAG**: For efficient data structure representation
 - **PubSub**: For real-time updates between clients
-- **IPNS**: For mutable pointers to todo lists
+- **IPNS**: For mutable pointers to journaltrove lists
 
 ## 🔗 Related Repositories
 
 The IPFS node is part of a multi-repository ecosystem:
 
-- [todo-system](https://github.com/journalbrand/todo-system) - System-level coordination, requirements and CI/CD orchestration
-- [todo-ios](https://github.com/journalbrand/todo-ios) - iOS client
-- [todo-android](https://github.com/journalbrand/todo-android) - Android client
+- [journaltrove-system](https://github.com/journalbrand/journaltrove-system) - System-level coordination, requirements and CI/CD orchestration
+- [journaltrove-ios](https://github.com/journalbrand/journaltrove-ios) - iOS client
+- [journaltrove-android](https://github.com/journalbrand/journaltrove-android) - Android client
 
 ## 📝 Contributing
 

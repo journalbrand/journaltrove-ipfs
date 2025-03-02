@@ -1,5 +1,5 @@
 // === WATCHER HEADER START ===
-// File: todo-ipfs/pkg/echo/echo_test.go
+// File: journaltrove-ipfs/pkg/echo/echo_test.go
 // Managed by file watcher
 // === WATCHER HEADER END ===
 package echo

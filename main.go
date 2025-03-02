@@ -1,18 +1,18 @@
 // === WATCHER HEADER START ===
-// File: todo-ipfs/main.go
+// File: journaltrove-ipfs/main.go
 // Managed by file watcher
 // === WATCHER HEADER END ===
 package main
 
 import (
 	"fmt"
-	"github.com/journalbrand/todo-ipfs/pkg/echo"
+	"github.com/journalbrand/journaltrove-ipfs/pkg/echo"
 )
 
 func main() {
 	service := echo.NewService()
 	
-	message := "Hello from IPFS Todo App!"
+	message := "Hello from IPFS journaltrove App!"
 	
 	// Simple echo
 	result := service.Echo(message)

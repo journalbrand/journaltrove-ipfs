@@ -1,5 +1,5 @@
 {
-  "@context": "https://raw.githubusercontent.com/journalbrand/todo-system/main/requirements/context/requirements-context.jsonld",
+  "@context": "https://raw.githubusercontent.com/journalbrand/journaltrove-system/main/requirements/context/requirements-context.jsonld",
   "@graph": [
     {
       "id": "IPFS",
@@ -13,7 +13,7 @@
       "id": "System.2.1.IPFS.1.1",
       "type": "Requirement",
       "name": "IPFS Data Storage",
-      "description": "The IPFS node shall store and persist todo data with content-addressable identifiers",
+      "description": "The IPFS node shall store and persist journaltrove data with content-addressable identifiers",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
@@ -23,7 +23,7 @@
       "id": "System.2.1.IPFS.1.2",
       "type": "Requirement",
       "name": "IPFS Data Retrieval",
-      "description": "The IPFS node shall provide APIs for clients to retrieve stored todo data",
+      "description": "The IPFS node shall provide APIs for clients to retrieve stored journaltrove data",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",

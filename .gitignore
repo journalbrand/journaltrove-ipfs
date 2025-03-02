@@ -4,7 +4,7 @@
 *.dll
 *.so
 *.dylib
-todo_app
+journaltrove_app
 
 # Test binary, build with `go test -c`
 *.test

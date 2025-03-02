@@ -1,20 +1,17 @@
-# === WATCHER HEADER START ===
-# File: todo-ipfs/Makefile
-# Managed by file watcher
-# === WATCHER HEADER END ===
+
 .PHONY: build test clean run
 
 build:
-	go build -o todo_app
+	go build -o journaltrove_app
 
 test:
 	go test ./... -v
 
 clean:
-	rm -f todo_app
+	rm -f journaltrove_app
 
 run: build
-	./todo_app
+	./journaltrove_app
 
 lint:
 	go vet ./...
