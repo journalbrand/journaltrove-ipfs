@@ -1,3 +1,7 @@
+// === WATCHER HEADER START ===
+// File: todo-ipfs/main.go
+// Managed by file watcher
+// === WATCHER HEADER END ===
 package main
 
 import (

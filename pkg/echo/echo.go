@@ -1,3 +1,7 @@
+// === WATCHER HEADER START ===
+// File: todo-ipfs/pkg/echo/echo.go
+// Managed by file watcher
+// === WATCHER HEADER END ===
 // Package echo provides a simple string echo service
 package echo
 

@@ -1,3 +1,7 @@
+# === WATCHER HEADER START ===
+# File: todo-ipfs/Makefile
+# Managed by file watcher
+# === WATCHER HEADER END ===
 .PHONY: build test clean run
 
 build:
