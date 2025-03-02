@@ -10,54 +10,54 @@
       "dateCreated": "2025-03-02T00:00:00Z"
     },
     {
-      "id": "Req.IPFS.1",
+      "id": "System.2.1.IPFS.1.1",
       "type": "Requirement",
       "name": "IPFS Data Storage",
       "description": "The IPFS node shall store and persist todo data with content-addressable identifiers",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "Req.Sys.IPFS.1"
+      "parent": "System.2.1.IPFS.1"
     },
     {
-      "id": "Req.IPFS.2",
+      "id": "System.2.1.IPFS.1.2",
       "type": "Requirement",
       "name": "IPFS Data Retrieval",
       "description": "The IPFS node shall provide APIs for clients to retrieve stored todo data",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "Req.Sys.IPFS.1" 
+      "parent": "System.2.1.IPFS.1"
     },
     {
-      "id": "Req.IPFS.3",
+      "id": "System.2.1.IPFS.2",
       "type": "Requirement",
       "name": "IPFS Data Security",
       "description": "The IPFS node shall verify cryptographic signatures on data before accepting it for storage",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "Req.Sys.2"
+      "parent": "System.2.1"
     },
     {
-      "id": "Req.IPFS.4",
+      "id": "System.2.1.IPFS.3",
       "type": "Requirement",
       "name": "IPFS Node Discovery",
       "description": "The IPFS node shall support discovery of other nodes for data replication",
       "status": "Draft",
       "priority": "Medium",
       "component": "IPFS",
-      "parent": "Req.Sys.2"
+      "parent": "System.2.1"
     },
     {
-      "id": "Req.IPFS.5",
+      "id": "System.2.1.IPFS.4",
       "type": "Requirement",
       "name": "IPFS Data Synchronization",
       "description": "The IPFS node shall automatically synchronize data with other authorized nodes",
       "status": "Draft",
       "priority": "Medium",
       "component": "IPFS",
-      "parent": "Req.Sys.2"
+      "parent": "System.2.1"
     }
   ]
 } 
