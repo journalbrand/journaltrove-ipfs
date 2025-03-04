@@ -12,25 +12,25 @@
           "name": "EchoServiceTest",
           "testCases": [
             {
-              "@id": "testEcho",
+              "@id": "TestEcho",
               "@type": "TestCase",
-              "name": "testEcho",
-              "verifies": "System.1.1.IPFS.1",
-              "description": "Verifies DID document storage and publishing capabilities"
+              "name": "TestEcho",
+              "verifies": "System.2.1.IPFS.1",
+              "description": "Verifies that the Echo method correctly returns input strings"
             },
             {
-              "@id": "testEchoWithTimestamp",
+              "@id": "TestEchoWithTimestamp",
               "@type": "TestCase",
-              "name": "testEchoWithTimestamp",
-              "verifies": "System.1.1.IPFS.1",
-              "description": "Verifies DID document publishing with timestamps"
+              "name": "TestEchoWithTimestamp",
+              "verifies": "System.2.1.IPFS.1",
+              "description": "Verifies that the EchoWithTimestamp method adds a timestamp to the input"
             },
             {
-              "@id": "testEchoWithEmptyString",
+              "@id": "TestEchoWithEmptyString",
               "@type": "TestCase",
-              "name": "testEchoWithEmptyString",
-              "verifies": "System.1.1.IPFS.2",
-              "description": "Verifies DID document format validation"
+              "name": "TestEchoWithEmptyString",
+              "verifies": "System.2.1.IPFS.1",
+              "description": "Verifies that the Echo method handles empty strings correctly"
             }
           ]
         }
