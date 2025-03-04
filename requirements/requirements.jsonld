@@ -7,77 +7,97 @@
       "name": "IPFS Node",
       "description": "The Go-based Kubo IPFS node for data storage and synchronization",
       "version": "0.1.0",
-      "dateCreated": "2025-03-02T00:00:00Z"
+      "dateCreated": "2025-03-04T00:00:00Z"
     },
     {
-      "id": "IPFS-1.1.1",
+      "id": "System.1.1.IPFS.1",
       "type": "Requirement",
-      "name": "DID Document Storage Format",
-      "description": "The IPFS node shall store DID documents in a JSON/IPLD format with appropriate cryptographic signatures",
+      "name": "IPFS DID Document Storage",
+      "description": "The IPFS node shall store and publish DID documents in JSON/IPLD format with cryptographic signatures",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "IPFS-1.1"
+      "parent": "System.1.1"
     },
     {
-      "id": "IPFS-1.2",
+      "id": "System.1.1.IPFS.2",
       "type": "Requirement",
-      "name": "DID Document Verification",
-      "description": "The IPFS node shall verify cryptographic signatures on DID documents before storing them",
+      "name": "IPFS DID Format Validation",
+      "description": "The IPFS node shall validate that all DID documents follow the required JSON/IPLD format before storing",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "IPFS-1"
+      "parent": "System.1.1"
     },
     {
-      "id": "FR-1.1.1",
+      "id": "System.1.2.IPFS.1",
       "type": "Requirement",
-      "name": "DID Cache Implementation",
-      "description": "The IPFS node shall implement a persistent cache for frequently accessed DID documents",
+      "name": "IPFS DID Document Caching",
+      "description": "The IPFS node shall maintain a local cache for DID documents with fast resolution times",
       "status": "Draft",
       "priority": "Medium",
       "component": "IPFS",
-      "parent": "FR-1.1"
+      "parent": "System.1.2"
     },
     {
-      "id": "FR-1.2.1",
+      "id": "System.1.3.IPFS.1",
       "type": "Requirement",
-      "name": "Journal Policy Verification",
-      "description": "The IPFS node shall verify cryptographic signatures on journal policies before accepting roster updates",
+      "name": "IPFS Journal IPNS Publication",
+      "description": "The IPFS node shall support publishing signed JournalMap structures via IPNS",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "FR-1.2"
+      "parent": "System.1.3"
     },
     {
-      "id": "FR-1.3.1",
+      "id": "System.1.3.IPFS.2",
       "type": "Requirement",
-      "name": "JournalMap Structure",
-      "description": "The IPFS node shall create and maintain signed JournalMap structures in IPLD format",
+      "name": "IPFS Journal Structure Validation", 
+      "description": "The IPFS node shall validate journal structures and signatures before publishing",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "FR-1.3"
+      "parent": "System.1.3"
     },
     {
-      "id": "SR-1.1.1",
+      "id": "System.3.1.IPFS.1",
       "type": "Requirement",
-      "name": "Attestation Validation Logic",
-      "description": "The IPFS node shall implement hardware attestation validation for device-generated DIDs",
+      "name": "IPFS Journal Policy Enforcement",
+      "description": "The IPFS node shall enforce journal policy compliance at roster updates, rejecting unauthorized identities",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "SR-1.1"
+      "parent": "System.3.1"
     },
     {
-      "id": "SR-1.2.1",
+      "id": "System.3.1.IPFS.2",
       "type": "Requirement",
-      "name": "Journal Policy Rule Enforcement",
-      "description": "The IPFS node shall enforce explicit policy rules when validating roster updates",
+      "name": "IPFS Journal Content Validation",
+      "description": "The IPFS node shall verify the integrity and signatures of journal content before acceptance",
       "status": "Draft",
       "priority": "High",
       "component": "IPFS",
-      "parent": "SR-1.2"
+      "parent": "System.3.1"
+    },
+    {
+      "id": "System.5.1.IPFS.1",
+      "type": "Requirement",
+      "name": "IPFS Attestation Checks",
+      "description": "The IPFS node shall enforce mandatory attestation checks for all identities before acceptance",
+      "status": "Draft",
+      "priority": "High",
+      "component": "IPFS",
+      "parent": "System.5.1"
+    },
+    {
+      "id": "System.5.1.IPFS.2",
+      "type": "Requirement",
+      "name": "IPFS Cryptographic Verification",
+      "description": "The IPFS node shall verify cryptographic signatures on all data before accepting it for storage",
+      "status": "Draft",
+      "priority": "High",
+      "component": "IPFS",
+      "parent": "System.5.1"
     }
   ]
 } 
