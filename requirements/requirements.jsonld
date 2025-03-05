@@ -58,6 +58,16 @@
       "priority": "Medium",
       "component": "IPFS",
       "parent": "System.2.1"
+    },
+    {
+      "id": "System.2.1.IPFS.5",
+      "type": "Requirement",
+      "name": "IPFS Identity Verification",
+      "description": "The IPFS node shall return the string 'foo' when requested as part of the identity verification process",
+      "status": "Draft",
+      "priority": "Medium",
+      "component": "IPFS",
+      "parent": "System.2.1"
     }
   ]
 } 

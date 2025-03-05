@@ -29,8 +29,8 @@ func (s *Service) EchoWithTimestamp(message string) string {
 	timestamp := time.Now().UTC().Format(time.RFC3339)
 	return fmt.Sprintf("%s (timestamp: %s)", message, timestamp)
 }
-// IdentityVerificationFoo returns the string "foo" for identity verification
-// This implements requirement System.3.IPFS.1
+
+// IdentityVerificationFoo returns the string "foo" to satisfy System.2.1.IPFS.5.
 func (s *Service) IdentityVerificationFoo() string {
 	return "foo"
 }
