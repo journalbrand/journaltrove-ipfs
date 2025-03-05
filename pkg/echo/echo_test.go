@@ -13,14 +13,14 @@ import (
 func TestEcho(t *testing.T) {
 	// Given
 	service := NewService()
-	input := "hello"
+	input := "Hello, World!"
 
 	// When
 	output := service.Echo(input)
 
 	// Then
 	if output != input {
-		t.Errorf("Echo(%q) = %q, want %q", input, output, input)
+		t.Errorf("Echo should return the same string that was input: got %v want %v", output, input)
 	}
 }
 
@@ -29,19 +29,18 @@ func TestEcho(t *testing.T) {
 func TestEchoWithTimestamp(t *testing.T) {
 	// Given
 	service := NewService()
-	input := "hello"
+	input := "Hello, World!"
 
 	// When
 	output := service.EchoWithTimestamp(input)
 
 	// Then
 	if !strings.Contains(output, input) {
-		t.Errorf("EchoWithTimestamp(%q) = %q, which doesn't contain the input string", input, output)
+		t.Errorf("Output should contain the original input: %v", output)
 	}
 
-	// Check if timestamp might be included
-	if len(output) <= len(input) {
-		t.Errorf("EchoWithTimestamp(%q) = %q, which doesn't appear to include a timestamp", input, output)
+	if !strings.Contains(output, "timestamp:") {
+		t.Errorf("Output should contain a timestamp: %v", output)
 	}
 }
 
@@ -56,18 +55,17 @@ func TestEchoWithEmptyString(t *testing.T) {
 
 	// Then
 	if output != input {
-		t.Errorf("Echo(%q) = %q, want %q", input, output, input)
+		t.Errorf("Echo should work with empty strings: got %v want %v", output, input)
 	}
 }
 
 // TestIdentityVerificationFoo verifies that the IdentityVerificationFoo method
-// returns the string "foo" as specified by System.2.1.IPFS.5.
+// returns the string "foo" as required by System.3.IPFS.1
 func TestIdentityVerificationFoo(t *testing.T) {
 	svc := NewService()
 	result := svc.IdentityVerificationFoo()
-	expected := "foo"
-	if result != expected {
-		t.Errorf("IdentityVerificationFoo() = %q, want %q", result, expected)
+	if result != "foo" {
+		t.Errorf("IdentityVerificationFoo() failed, expected: foo, got: %s", result)
 	}
 }
 
