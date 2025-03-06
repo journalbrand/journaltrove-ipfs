@@ -10,6 +10,16 @@
       "dateCreated": "2025-03-02T00:00:00Z"
     },
     {
+      "id": "System.2.1.IPFS.1",
+      "type": "Requirement",
+      "name": "IPFS Data Handling",
+      "description": "The IPFS node shall handle data storage and retrieval operations",
+      "status": "Draft",
+      "priority": "High",
+      "component": "IPFS",
+      "parent": "System.2.1"
+    },
+    {
       "id": "System.2.1.IPFS.1.1",
       "type": "Requirement",
       "name": "IPFS Data Storage",
