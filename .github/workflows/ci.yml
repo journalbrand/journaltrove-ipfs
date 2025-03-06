@@ -85,6 +85,13 @@ jobs:
         name: ipfs-test-results-jsonld
         path: tests/results/test-results.jsonld
         if-no-files-found: error
+        
+    - name: 📤 Upload Requirements
+      uses: actions/upload-artifact@v4
+      with:
+        name: requirements-jsonld
+        path: requirements/requirements.jsonld
+        if-no-files-found: error
 
   ipfs-validate:
     name: 📊 Validate IPFS Requirements
