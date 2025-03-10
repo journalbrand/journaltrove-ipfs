@@ -78,6 +78,16 @@
       "priority": "Medium",
       "component": "IPFS",
       "parent": "System.2.1"
+    },
+    {
+      "id": "System.4.IPFS.1",
+      "type": "Requirement",
+      "name": "IPFS Timekeeping Service",
+      "description": "The IPFS node shall provide the current system time upon request",
+      "status": "Draft",
+      "priority": "High",
+      "component": "IPFS",
+      "parent": "System.4"
     }
   ]
 } 

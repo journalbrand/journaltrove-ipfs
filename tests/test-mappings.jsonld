@@ -40,6 +40,27 @@
               "description": "Verifies that the IdentityVerificationFoo method returns 'foo' as required"
             }
           ]
+        },
+        {
+          "@id": "TimeServiceTest",
+          "@type": "TestSuite",
+          "name": "TimeServiceTest",
+          "testCases": [
+            {
+              "@id": "TestCurrentTime",
+              "@type": "TestCase",
+              "name": "TestCurrentTime",
+              "verifies": "System.4.IPFS.1",
+              "description": "Verifies that the CurrentTime function returns an accurate time"
+            },
+            {
+              "@id": "TestCurrentTimeString",
+              "@type": "TestCase",
+              "name": "TestCurrentTimeString",
+              "verifies": "System.4.IPFS.1",
+              "description": "Verifies that the CurrentTimeString function returns a properly formatted time string"
+            }
+          ]
         }
       ]
     }
